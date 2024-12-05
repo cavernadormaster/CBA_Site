@@ -74,7 +74,7 @@ body li{
 }
 
 .sub_menu_head li:hover{
-    color: rgb(2, 171, 171);
+    color: #00CDE2;
 }
 
 .sub_menu_head_itens{
@@ -109,6 +109,7 @@ body li{
     text-align: left;
     font-size: 10px;
     box-sizing: border-box;
+    padding-left: 15px;
 }
 
 .sub_menu_head li:hover .sub_menu_head_itens {
@@ -118,7 +119,7 @@ body li{
 
 .sub_menu_head_itens li:hover a{
     opacity: 1;
-    color:rgb(2, 171, 171);
+    color:#00CDE2;
 }
 
 a{
@@ -151,8 +152,8 @@ a{
     font-size: 20px;
     text-decoration: none;
     color: white;
-    background-color: rgb(2, 171, 171);
-    border: 3px solid rgb(2, 171, 171);
+    background-color: #00CDE2;
+    border: 3px solid #00CDE2;
     border-radius: 20px 0 20px 0;
     transition-duration: 1s;
     text-align: center;
@@ -210,16 +211,15 @@ a{
     align-items: center;
     gap: 5rem;
     left: 360px;
-    padding-top: 50px;
 }
 
 .link_in_image li{
-    border: 3px solid rgb(2, 171, 171);
-    height: 60px;
-    width: 90px;
+    border: 2px solid #00CDE2;
+    height: 55px;
+    width: 70px;
     align-items: center;
     border-radius: 20px 0 20px 0;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .link_in_image li:hover
@@ -381,11 +381,11 @@ a{
 .footer_page p{
     font-size: 16px;
     font-weight: 700px;
-    color: rgb(2, 171, 171);
+    color: #00CDE2;
 }
 
 .cba_footer_menu li + li::before{
-    color: rgb(2, 171, 171);
+    color: #00CDE2;
     content: "|";
     padding: 1rem;
 }
