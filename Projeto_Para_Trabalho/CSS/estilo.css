@@ -4,6 +4,11 @@ html{
     font-size: 16px;
 }
 
+a{
+    text-decoration: none;
+    font-weight: 1000;
+}
+
 h2{
   font-weight: 500;  
 }
@@ -13,16 +18,217 @@ ul{
     padding: 0;
 }
 
+header .container .high_text_head .logo_cba_bc{
+    position: absolute;
+   top: 0;
+   left: 0;
+   display: block;
+   width: 141px;
+   height: 56px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-image: url(../Imagens/Logo_CBA/logo.png);
+   z-index: 1;
+}
+
+.sub_menu_head_itens{
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 16px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    transition-duration: 0.377s;
+}
+
+.sub_menu_head_itens li{
+    position: relative;
+}
+
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width:992px) {
+    .container{
+        max-width: 720px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+@media (min-width:1200px){
+    header{
+        position: relative;
+    }
+
+    header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 96px;
+    }
+
+    header .container .high_text_head .logo_cba_bc{
+        width: 238px;
+        height: 96px;
+        background-size: auto;
+    }
+
+    header .container .high_text_head{
+        height: auto;
+    }
+
+   header .container .high_text_head .quotes {
+        display: flex;
+        margin: 0 64px 0;
+    }
+
+    header .container .high_text_head .quotes .item {
+        display: flex;
+        align-items: center;
+        margin: 0 12px;
+    }
+
+   header .container .high_text_head .quotes .item span {
+        margin: 0 12px;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    header .container .bottom {
+       position: relative;
+       top: auto;
+       left: auto;
+       width: auto;
+       height: auto;
+       padding: 0;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       opacity: 1;
+       z-index: auto;
+       background: none;
+       box-shadow: none;
+       z-index: auto;
+    }
+
+     header .container .bottom nav {
+        padding-left: 320px;
+    }
+
+    header .container .bottom nav .sub_menu_head {
+        flex-direction: row;
+    }
+
+    header .container .bottom nav .sub_menu_head li a {
+        padding: 8px 8px 18px;
+    }
+
+    header .container .bottom nav .sub_menu_head li .sub_menu_head_itens {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        padding: 0;
+        min-width: 200px;
+        transition-duration: 0.144s;
+        transform: translateX(-50%);
+        background-color: rgba(19, 50, 226, 0.8);
+    }
+
+    ul, li {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
 body li{
     list-style: none;
 }
 
-.wrapperContainer-blue{
-    background-color: rgb(3, 6, 235);
+header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: #1332e2;
+}
+
+.quotes{
+    display: flex;
+        margin: 0 64px 0;
+}
+
+.item span{
+    margin: 0 12px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+header .container{
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.high_text_head{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 64px;
+}
+
+.bottom {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 90%;
+    height: 100vh;
+    padding: 32px 20px 96px;
+    opacity: 0;
+    transition-duration: 0.377s;
+    transition-timing-function: ease-in;
+    background-color: #1332e2;
+    z-index: 1;
+    box-shadow: 0 0 16px rgba(36, 36, 42, 0.75);
+}
+
+header .container .bottom nav {
+    width: 100%;
 }
 
 .whitetext{
-   color: white; 
+   color: rgb(255, 255, 255); 
 }
 
 .porcentagem_verde{
@@ -34,21 +240,43 @@ body li{
     color: red;
 }
 
-@media (min-width: 1200px) {
- .container{
-     max-width: 1170px;
-     margin: 0 auto;
- }
-}
-.header{
+.item{
     display: flex;
-    justify-content: center;
-    gap: 200px;
     align-items: center;
+    margin: 0 12px;
 }
 
-.header_nav a{
-    text-decoration: none;
+.right{
+    display: flex;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    margin: 0 18px;
+}
+
+header .container .high_text_head .right .lang a {
+    display: block;
+    color: #00CDE2;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-duration: 0.144s;
+}
+
+.top-menu li a {
+    display: block;
+    padding: 8px 16px;
+    color: #00CDE2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration: underline;
 }
 
 .header_nav ul{
@@ -57,64 +285,36 @@ body li{
     margin-top: 1px;
 }
 
-.high_text_head{
-    gap: 2rem;
-    font-size: 15px;
-    margin-bottom: 1px;
-    margin-top: 10px;
-    font-family: "Votorantim Sans", sans-serif;
-    font-weight: 700;
-}
-
 .high_text_head li{
     align-content: center;
 }
 
-.sub_menu_head {
-    gap: 2rem;
-    margin-bottom: 1px;
-    font-size: 15px;
-    text-align: left;
-    padding-left: 0px;
-    font-family: "Votorantim Sans", sans-serif;
-    font-weight: 700;
-}
-
-.sub_menu_head li{
-    color: rgb(255, 255, 255);
-}
-
-.sub_menu_head li:hover{
-    color: #00CDE2;
-}
-
-.sub_menu_head_itens{
-    position: absolute;
-    width: 200px;
-    max-height: 0;
+header .container .bottom nav .sub_menu_head {
+    padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column;
-    opacity: 0;
-    pointer-events: none;
-    transition-duration: 0.377s;
-    transform: translateX(-105px);
-    z-index: 2;
+    justify-content: space-between;
+    list-style: none;
 }
 
-.sub_menu_head_itens li{
-    align-content: center;
-    background-color: rgb(34, 0, 255);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: left;
+header .container .bottom nav .sub_menu_head li{
+    position: relative;
+}
+
+.container .bottom nav .sub_menu_head li a{
+    display: block;
+    padding: 8px;
+    color: #FFF;
+    font-weight: 700;
+    transition-duration: 0.144s;
+    &:hover{
+        opacity: 1;
+        color:#00CDE2;
+    }
 }
 
 .sub_menu_head_itens a{
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     width: 100%;
     overflow-wrap: break-word; 
@@ -127,34 +327,8 @@ body li{
 .sub_menu_head li:hover .sub_menu_head_itens {
     opacity: 1;
     pointer-events: all;
-}
-
-.sub_menu_head_itens li:hover a{
-    opacity: 1;
     color:#00CDE2;
 }
-
-a{
-    color: white;
-    font-weight: 1000;
-}
-
-.logo_cba_img{
-    max-width: 100%;
-    max-height: 100%;
-    align-content: right;
-    width: 130px;
-    height: 40px;
-    overflow: hidden;
-}
-
-.logo_cba_bc{
-    width: 140px;
-    background-color: white;
-    border: 28px solid white;
-    border-radius: 80px 0 80px 0;
-}
-
 
 /*Body parts top*/
 
@@ -203,6 +377,16 @@ a{
 .video_banner_text h1{
     text-transform: uppercase;
     font-size: 35px;
+}
+
+.video_banner_text p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Votorantim Sans", sans-serif;
+    line-height: 150%;
 }
 
 .link_in_image{
@@ -272,6 +456,12 @@ a{
 .explicacao_empresa{
     font-family: "Votorantim Sans", sans-serif;
     font-size: 20px;
+}
+
+.btn_empresa_valor
+{
+    width: 150px;
+    font-size: 14px;
 }
 
 .valor_empresa_text_container{
